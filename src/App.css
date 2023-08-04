@@ -35,4 +35,7 @@ button{
     border-radius: 20px;
 }
 
-button:hover
+button:hover{
+    background-color: black;
+    color: #fff;
+}
