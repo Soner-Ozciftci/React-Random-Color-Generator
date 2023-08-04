@@ -6,13 +6,14 @@ function App() {
 
   function randomHex() {
     const randomhex = "#" + Math.floor(Math.random() * 16777721).toString(16);
-    setHex(randomHex);
+    setHex(randomhex);
   }
 
   return (
     <div className="App">
       <h1>{hex}</h1>
-      <button>Click for New Background</button>
+      <button onClick={randomHex} >Click for New Background</button>
+      <button onClick={()=> navigator.clipboard.writeText(hex)}>Copy the Hex Value</button>
     </div>
   );
 }
